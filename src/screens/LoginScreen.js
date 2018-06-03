@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import { withTracker, MeteorListView } from 'react-native-meteor';
+import { View, Text, Button } from 'react-native';
 
 export default class LoginScreen extends React.Component {
 
@@ -8,6 +7,9 @@ export default class LoginScreen extends React.Component {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text> Login Screen</Text>
+        <Button
+            title='Complete Login' onPress={ () => this.props.navigation.navigate('DrawerNavigator') }
+        />
       </View>
     );
   }

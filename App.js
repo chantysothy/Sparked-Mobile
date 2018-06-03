@@ -6,6 +6,7 @@ import {createStackNavigator, StackNavigator } from 'react-navigation';
 import WelcomeScreen from './src/screens/WelcomeScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/SignUpScreen';
+import AppDrawerNavigator from './src/screens/DrawerNavigator';
 
 Meteor.connect('ws://localhost:3000/websocket'); 
 
@@ -21,8 +22,12 @@ export default class App extends React.Component {
 const AppStackNavigator = new createStackNavigator({
   WelcomeScreen: { screen: WelcomeScreen },
   LoginScreen: { screen: LoginScreen },
-  RegisterScreen: { screen: RegisterScreen }
-
+  RegisterScreen: { screen: RegisterScreen },
+  DrawerNavigator: { screen: AppDrawerNavigator }
+}, {
+  navigationOptions: {
+    gesturesEnabled: false
+  }
 });
 
 const styles = StyleSheet.create({
