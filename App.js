@@ -2,6 +2,10 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Courses from './src/containers/Courses'
 import Meteor from 'react-native-meteor';
+import {createStackNavigator, StackNavigator } from 'react-navigation';
+import WelcomeScreen from './src/screens/WelcomeScreen';
+import LoginScreen from './src/screens/LoginScreen';
+import RegisterScreen from './src/screens/SignUpScreen';
 
 Meteor.connect('ws://localhost:3000/websocket'); 
 
@@ -9,12 +13,17 @@ Meteor.connect('ws://localhost:3000/websocket');
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Courses/>
-      </View>
+    <AppStackNavigator/>
     );
   }
 }
+
+const AppStackNavigator = new createStackNavigator({
+  WelcomeScreen: { screen: WelcomeScreen },
+  LoginScreen: { screen: LoginScreen },
+  RegisterScreen: { screen: RegisterScreen }
+
+});
 
 const styles = StyleSheet.create({
   container: {

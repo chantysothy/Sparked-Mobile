@@ -12,28 +12,6 @@ export class Courses extends React.Component {
         }
     }
 
-    // fetchData(){
-
-    //     this.setState({
-    //         isLoading: true,
-    //         contacts: []
-    //     })
-
-    //     fetch('http://localhost:3000/api/course')
-    //     .then(response => response.json())
-    //     .then(parsedJSON => parsedJSON.results.map(course => (
-    //         {
-    //             name: course.name
-    //         }
-    //     )))
-    //     .then(course => this.setState({
-    //         data,
-    //         isLoading: false
-    //     }))
-    //     .catch(error => console.log('parsing failed', error))
-        
-    // }
-
     renderItem = course => <ListItem title={course.name}/>;
     
     render() {
@@ -46,14 +24,11 @@ export class Courses extends React.Component {
             ? 
             <ActivityIndicator size="large" color="#0000ff" />
             : 
-            //  courses.map(course => <ListItem  key={course._id} title={course.name} />)
             <FlatList
                 data={courses}
                 keyExtractor={(x, i) => i}
                 renderItem={({ item }) =>
-                <Text>
-                {item.name}
-                </Text>}
+                <ListItem title={item.name} key={item._id}/>}
         />
         }
         </View>
