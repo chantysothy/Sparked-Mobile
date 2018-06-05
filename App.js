@@ -8,7 +8,7 @@ import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/SignUpScreen';
 import AppDrawerNavigator from './src/screens/DrawerNavigator';
 
-Meteor.connect('ws://localhost:3000/websocket'); 
+Meteor.connect('ws://10.1.0.142:3000/websocket'); 
 
 
 export default class App extends React.Component {

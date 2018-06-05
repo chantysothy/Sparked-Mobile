@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Button, TouchableHighlight, StyleSheet } from 'react-native';
+import { Icon, Input } from 'react-native-elements';
 
 export default class WelcomeScreen extends React.Component {
 
@@ -11,14 +12,27 @@ export default class WelcomeScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text> Welcome Screen</Text>
-        <Button
-            title='Log in' onPress={ () => this.props.navigation.navigate('LoginScreen') }
-        />
+        <Text> SparkEd Mobile</Text>
 
-         <Button
+            <Input
+              placeholder='Server Address'
+              leftIcon={<Icon name='link'/>}
+              onChangeText={
+                (link => this.setState({link}))
+              }
+              returnKeyType={'next'}
+              style={{margin: 40}}
+          />
+          <View/>
+            <Button
+                title='Connect' onPress={ () => this.props.navigation.navigate('LoginScreen') }
+            />
+        
+         
+
+         {/* <Button
             title='Register' onPress={ () => this.props.navigation.navigate('RegisterScreen') }
-        />
+        /> */}
       </View>
     );
   }
