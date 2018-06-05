@@ -12,10 +12,9 @@ export default class WelcomeScreen extends React.Component {
     state = {
       link:''
     }
+    
   _handleSubmit = () => {
     const value = this._form.getValue();
-    // const { link } = value;
-    // const address = `ws://${link}/websocket`;
      return this.props.navigation.navigate('LoginScreen');
   }  
 
