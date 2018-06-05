@@ -2,38 +2,43 @@ import React from 'react';
 import { View, Text, Button, TouchableHighlight, StyleSheet } from 'react-native';
 import { Icon, Input } from 'react-native-elements';
 
+
 export default class WelcomeScreen extends React.Component {
 
     static navigationOptions = {
         header: null,
         title: 'Welcome'
     }
+    state = {
+      link:''
+    }
+  _handleSubmit = () => {
+    const value = this._form.getValue();
+    // const { link } = value;
+    // const address = `ws://${link}/websocket`;
+     return this.props.navigation.navigate('LoginScreen');
+  }  
 
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text> SparkEd Mobile</Text>
-
-            <Input
-              placeholder='Server Address'
-              leftIcon={<Icon name='link'/>}
-              onChangeText={
-                (link => this.setState({link}))
-              }
-              returnKeyType={'next'}
-              style={{margin: 40}}
-          />
+      <View style={styles.container}>
+        <Text style={{justifyContent: 'center'}}> SparkEd Mobile</Text>
           <View/>
-            <Button
-                title='Connect' onPress={ () => this.props.navigation.navigate('LoginScreen') }
-            />
-        
-         
-
-         {/* <Button
-            title='Register' onPress={ () => this.props.navigation.navigate('RegisterScreen') }
-        /> */}
+         <Button
+            title='Connect' onPress={ () => this.props.navigation.navigate('RegisterScreen') }
+        />
+        <Text>{this.state.link}</Text>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'center',
+    marginTop: 50,
+    padding: 20,
+    backgroundColor: '#ffffff',
+    flex:1
+  },
+});
