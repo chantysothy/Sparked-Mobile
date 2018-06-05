@@ -1,7 +1,12 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, TouchableHighlight, StyleSheet } from 'react-native';
 
 export default class WelcomeScreen extends React.Component {
+
+    static navigationOptions = {
+        header: null,
+        title: 'Welcome'
+    }
 
   render() {
     return (

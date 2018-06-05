@@ -26,7 +26,8 @@ const AppStackNavigator = new createStackNavigator({
   DrawerNavigator: { screen: AppDrawerNavigator }
 }, {
   navigationOptions: {
-    gesturesEnabled: false
+    gesturesEnabled: false,
+    headerMode: 'screen'
   }
 });
 
