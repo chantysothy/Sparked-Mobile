@@ -1,10 +1,11 @@
 import Meteor, { withTracker, MeteorListView } from 'react-native-meteor';
 import React from 'react';
 import { View, Text, FlatList, ActivityIndicator } from 'react-native';
-import { ListItem } from 'react-native-elements'
+import { ListItem, List } from 'react-native-elements'
+import { connect } from 'react-redux';
+import mapDispatchToProps from '../actions/courseActions';
 
-
-export class Courses extends React.Component {
+class Courses extends React.Component {
     constructor(){
         super();
         this.state = {
@@ -15,7 +16,7 @@ export class Courses extends React.Component {
     renderItem = course => <ListItem title={course.name}/>;
     
     render() {
-      const { courseReady, courses } = this.props;
+      const { courseReady, courses, onCourseClick } = this.props;
       const { data } = this.state;
       return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -26,15 +27,26 @@ export class Courses extends React.Component {
             : 
             <FlatList
                 data={courses}
-                keyExtractor={(x, i) => i}
+                keyExtractor={(x, i) => i.toString()}
                 renderItem={({ item }) =>
-                <ListItem title={item.name} key={item._id}/>}
-        />
+                // <ListItem title={item.name} key={item._id}/>
+                <Text
+                  onPress={onCourseClick}
+                >{item.name}</Text>
+              }
+             />
+         
         }
         </View>
       );
     }
   }
+const mapStateToProps = state => {
+  return {
+    courseId: state.courseId
+  }
+}
+const allCourses =  connect(mapStateToProps, mapDispatchToProps)(Courses);
 
 export default withTracker(params => {
     const handle = Meteor.subscribe('courses');
@@ -42,4 +54,4 @@ export default withTracker(params => {
       courseReady: handle.ready(),
       courses: Meteor.collection('course').find(),
     };
-  })(Courses);
+  })(allCourses);

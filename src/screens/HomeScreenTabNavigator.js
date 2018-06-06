@@ -8,13 +8,13 @@ export default HomeScreenTabNavigator = new createBottomTabNavigator({
     ScreenOne: {
         screen: ScreenOne,
         navigationOptions: {
-            tabBarLabel: 'Feed'
+            tabBarLabel: 'Courses'
         }
     },
     ScreenTwo: {
         screen: ScreenTwo,
         navigationOptions: {
-            tabBarLabel: 'Feeds'
+            tabBarLabel: 'Resources'
         }
     }
 });

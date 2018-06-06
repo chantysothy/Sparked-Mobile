@@ -7,6 +7,11 @@ import WelcomeScreen from './src/screens/WelcomeScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/SignUpScreen';
 import AppDrawerNavigator from './src/screens/DrawerNavigator';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import courseReducer from './src/reducers/courseReducer';
+
+const store = createStore(courseReducer);
 
 Meteor.connect('ws://10.1.0.142:3000/websocket'); 
 
@@ -14,7 +19,10 @@ Meteor.connect('ws://10.1.0.142:3000/websocket');
 export default class App extends React.Component {
   render() {
     return (
-    <AppStackNavigator/>
+      <Provider store={store}>
+          <AppStackNavigator/>
+      </Provider>
+    
     );
   }
 }

@@ -13,6 +13,13 @@ export default class LoginScreen extends React.Component {
 
   handleLogin = e => {
     const { email, password } = this.state;
+    if (!email.length) {
+      this.setState({error:`Email can't be empty`});
+      return;
+    } else if (!password.length) {
+      this.setState({error:`Password can't be empty`});
+      return;
+    }
     Meteor.loginWithPassword(email, password, (err, res) => {
       err ? this.setState({error:err.reason}) : this.props.navigation.navigate('HomeScreen')
     })
@@ -20,6 +27,7 @@ export default class LoginScreen extends React.Component {
 
   render() {
     const { error } = this.state;
+    
     return (
       <View style={{ flex: 2, alignItems: 'center', justifyContent: 'center' }}>
           <Input

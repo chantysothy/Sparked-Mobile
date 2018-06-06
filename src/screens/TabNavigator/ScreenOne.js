@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 import Meteor from 'react-native-meteor';
+import Courses from '../../containers/Courses';
 
 export default class ScreenOne extends React.Component {
 
@@ -8,8 +9,8 @@ export default class ScreenOne extends React.Component {
     const user = Meteor.user();
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Logged in as: { user.profile.name } </Text>
-        <Text>{ user.emails[0].address } </Text>
+       <Text>All Courses</Text>
+        <Courses/>
       </View>
     );
   }

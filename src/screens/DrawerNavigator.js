@@ -10,9 +10,9 @@ const InnerStackNavigator = new createStackNavigator({
   }
 })
 
-const AppDrawerNavigator = new createDrawerNavigator({
-  HomeScreen: { screen: InnerStackNavigator }
-});
+// const AppDrawerNavigator = new createDrawerNavigator({
+//   HomeScreen: { screen: InnerStackNavigator }
+// });
 
-export default AppDrawerNavigator;
+export default InnerStackNavigator;
 
