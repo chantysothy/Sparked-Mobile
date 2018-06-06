@@ -1,9 +1,10 @@
 export default function mapDispatchToProps(dispatch){
     return {
-        onCourseClick: () => {
-            // console.log(dispatch)
+        onCourseClick: (e) => {
+            console.log(e)
           const action = { 
-              type: 'SET_ID'
+              type: 'SET_ID',
+              courseId: e
           };
           dispatch(action);
         }

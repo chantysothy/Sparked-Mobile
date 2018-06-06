@@ -11,6 +11,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import courseReducer from './src/reducers/courseReducer';
 
+
 const store = createStore(courseReducer);
 
 Meteor.connect('ws://10.1.0.142:3000/websocket'); 
