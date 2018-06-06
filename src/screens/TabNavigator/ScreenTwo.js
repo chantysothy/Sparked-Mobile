@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { store } from '../../../App';
+import Resources from '../../containers/Resources';
 
 export default class ScreenTwo extends React.Component {
 
@@ -11,7 +12,11 @@ export default class ScreenTwo extends React.Component {
         <Text>  Screen 2</Text>
         <Text>
           {unitName}
+
         </Text>
+        <View>
+          <Resources/>
+        </View>
       </View>
     );
   }

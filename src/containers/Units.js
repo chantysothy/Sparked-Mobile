@@ -9,7 +9,7 @@ import { withNavigation } from 'react-navigation';
 class Units extends React.Component {
     getUnitId = (id, name) => {
       this.props.onUnitClick(id, name);
-      return this.props.navigation.navigate('ScreenTwo');
+      return this.props.navigation.navigate('ScreenTwo', {id, name});
     }
 
     renderUnit = ({item}) => <Text onPress={() => this.getUnitId(item._id, item.name)}>{item.name}</Text>
