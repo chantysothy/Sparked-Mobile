@@ -8,7 +8,7 @@ export default HomeScreenTabNavigator = new createBottomTabNavigator({
     ScreenOne: {
         screen: ScreenOne,
         navigationOptions: {
-            tabBarLabel: 'Courses'
+            tabBarLabel: 'Units'
         }
     },
     ScreenTwo: {

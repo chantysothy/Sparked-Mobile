@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 import Meteor from 'react-native-meteor';
-import Courses from '../../containers/Courses';
+import Units from '../../containers/Units';
 
 export default class ScreenOne extends React.Component {
 
@@ -9,9 +9,8 @@ export default class ScreenOne extends React.Component {
     const user = Meteor.user();
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-       <Text>All Courses</Text>
-        {/* <Courses navigation={() => this.props.navigation.navigate('WelcomeScreen')}/> */}
-        <Courses/>
+       <Text>All Units</Text>
+        <Units/>
       </View>
     );
   }

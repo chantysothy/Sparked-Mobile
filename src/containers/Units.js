@@ -3,31 +3,30 @@ import React from 'react';
 import { View, Text, FlatList, ActivityIndicator } from 'react-native';
 import { ListItem, List } from 'react-native-elements'
 import { connect } from 'react-redux';
-import mapDispatchToProps from '../actions/courseActions';
+import mapDispatchToProps from '../actions/unitActions';
 import { withNavigation } from 'react-navigation';
 
-class Courses extends React.Component {
-    getCourseId = (id) => {
-      this.props.onCourseClick(id);
+class Units extends React.Component {
+    getUnitId = (id, name) => {
+      this.props.onUnitClick(id, name);
       return this.props.navigation.navigate('ScreenTwo');
     }
 
-    renderCourse = ({item}) => <Text onPress={() => this.getCourseId(item._id)}>{item.name}</Text>
+    renderUnit = ({item}) => <Text onPress={() => this.getUnitId(item._id, item.name)}>{item.name}</Text>
     render() {
-      const { courseReady, courses, onCourseClick } = this.props;
+      const { unitReady, units, onUnitClick } = this.props;
       return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
           {
-            !courseReady 
+            !unitReady 
             ? 
             <ActivityIndicator size="large" color="#0000ff" />
             : 
             <FlatList
-                data={courses}
+                data={units}
                 keyExtractor={(x, i) => i.toString()}
-                renderItem={this.renderCourse }
+                renderItem={this.renderUnit }
              />
-         
         }
         
         </View>
@@ -36,16 +35,17 @@ class Courses extends React.Component {
   }
 const mapStateToProps = (state, props) => {
   return {
-    courseId: state.courseId
+    unitId: state.unitId,
+    unitName: state.unitName
   }
 }
-const courseWithNavigationProps = withNavigation(Courses)
-const allCourses =  connect(mapStateToProps, mapDispatchToProps)(courseWithNavigationProps);
+const unitWithNavigationProps = withNavigation(Units)
+const allUnits =  connect(mapStateToProps, mapDispatchToProps)(unitWithNavigationProps);
 
 export default withTracker(params => {
-    const handle = Meteor.subscribe('courses');
+    const handle = Meteor.subscribe('units');
     return {
-      courseReady: handle.ready(),
-      courses: Meteor.collection('course').find(),
+      unitReady: handle.ready(),
+      units: Meteor.collection('unit').find(),
     };
-  })(allCourses);
+  })(allUnits);

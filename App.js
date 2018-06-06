@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Courses from './src/containers/Courses'
 import Meteor from 'react-native-meteor';
 import {createStackNavigator, StackNavigator } from 'react-navigation';
 import WelcomeScreen from './src/screens/WelcomeScreen';
@@ -9,13 +8,12 @@ import RegisterScreen from './src/screens/SignUpScreen';
 import AppDrawerNavigator from './src/screens/DrawerNavigator';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import courseReducer from './src/reducers/courseReducer';
+import unitReducer from './src/reducers/unitReducer';
 
 
-const store = createStore(courseReducer);
+export const store = createStore(unitReducer);
 
 Meteor.connect('ws://10.1.0.142:3000/websocket'); 
-
 
 export default class App extends React.Component {
   render() {
