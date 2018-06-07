@@ -3,8 +3,8 @@ import React from 'react'
 import { View, Text, FlatList, ActivityIndicator } from 'react-native'
 import { ListItem, List } from 'react-native-elements'
 import { connect } from 'react-redux'
-import mapDispatchToProps from '../actions/unitActions'
 import { withNavigation } from 'react-navigation'
+import mapDispatchToProps from '../actions/unitActions'
 import { store } from '../../App'
 
 class Resources extends React.Component {
@@ -37,24 +37,22 @@ class Resources extends React.Component {
     )
   }
 }
-// const mapStateToProps = (state, props) => {
-//   return {
-//     unitId: state.unitId,
-//     unitName: state.unitName
-//   }
-// }
+const mapStateToProps = (state, props) => ({
+  unitId: state.unitId,
+  unitName: state.unitName
+})
 const unitWithNavigationProps = withNavigation(Resources)
+export const checkUnderScore = id =>
+  id.includes('-') > -1 ? id.substring(1) : id
+
 // const allUnits =  connect(mapStateToProps, mapDispatchToProps)(unitWithNavigationProps);
 
-export default withTracker(params => {
+export default withTracker(() => {
   const { unitId } = store.getState()
-  checkedId = checkUnderScore(unitId)
+  const checkedId = checkUnderScore(unitId)
   const handle = Meteor.subscribe('resourcess')
   return {
     resourcesReady: handle.ready(),
     resources: Meteor.collection('Resources').find({ 'meta.unitId': checkedId })
   }
 })(unitWithNavigationProps)
-
-export const checkUnderScore = id =>
-  id.includes('-') > -1 ? id.substring(1) : id

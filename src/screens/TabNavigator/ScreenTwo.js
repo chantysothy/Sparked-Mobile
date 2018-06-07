@@ -1,23 +1,18 @@
-import React from 'react';
-import { View, Text, Button } from 'react-native';
-import { store } from '../../../App';
-import Resources from '../../containers/Resources';
+import React from 'react'
+import { View, Text } from 'react-native'
+import { store } from '../../../App'
+import Resources from '../../containers/Resources'
 
-export default class ScreenTwo extends React.Component {
+const { unitName } = store.getState()
 
-  render() {
-    const { unitName } = store.getState();
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>  Screen 2</Text>
-        <Text>
-          {unitName}
+const ScreenTwo = () => (
+  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <Text> Screen 2</Text>
+    <Text>{unitName}</Text>
+    <View>
+      <Resources />
+    </View>
+  </View>
+)
 
-        </Text>
-        <View>
-          <Resources/>
-        </View>
-      </View>
-    );
-  }
-}
+export default ScreenTwo

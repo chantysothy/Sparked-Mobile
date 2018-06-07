@@ -1,9 +1,6 @@
 # enable ES6
-parserOptions:
-  ecmaVersion: 6
-  sourceType: module
-  ecmaFeatures:
-    jsx: true # enable React's JSX
+
+parser: babel-eslint
 
 # register plugins
 plugins:
@@ -14,7 +11,6 @@ plugins:
   
 
 # use the rules of eslint-config-airbnb
-# and the recommended rules of eslint-plugin-meteor
 extends:
   - airbnb/base
   - plugin:react/recommended

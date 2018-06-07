@@ -1,11 +1,11 @@
-import React from 'react';
-import { View, Text, Button } from 'react-native';
-import { createDrawerNavigator, createStackNavigator } from 'react-navigation';
-import HomeScreen  from './HomeScreen';
-import HomeScreenTabNavigator from './HomeScreenTabNavigator';
+import React from 'react'
+import { View, Text, Button } from 'react-native'
+import { createDrawerNavigator, createStackNavigator } from 'react-navigation'
+import HomeScreen from './HomeScreen'
+import HomeScreenTabNavigator from './HomeScreenTabNavigator'
 
 const InnerStackNavigator = new createStackNavigator({
-  TabNavigator : {
+  TabNavigator: {
     screen: HomeScreenTabNavigator
   }
 })
@@ -14,5 +14,4 @@ const InnerStackNavigator = new createStackNavigator({
 //   HomeScreen: { screen: InnerStackNavigator }
 // });
 
-export default InnerStackNavigator;
-
+export default InnerStackNavigator
