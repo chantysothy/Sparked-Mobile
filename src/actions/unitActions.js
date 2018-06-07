@@ -1,4 +1,3 @@
-// @flow
 export default function mapDispatchToProps(dispatch: any) {
   return {
     onUnitClick: (id: String, name: String) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
-import { Icon, Input } from 'react-native-elements';
+import { Input } from 'react-native-elements';
 import Meteor from 'react-native-meteor';
 import PropTypes from 'prop-types';
 
@@ -21,7 +21,10 @@ export default class LoginScreen extends React.Component {
       return;
     }
     Meteor.loginWithPassword(email, password, (err) => {
-      err ? this.setState({ error: err.reason }) : this.props.navigation.navigate('HomeScreen');
+      if (err) {
+        this.setState({ error: err.reason });
+      }
+      return this.props.navigation.navigate('ScreenOne');
     });
   }
 
@@ -32,13 +35,11 @@ export default class LoginScreen extends React.Component {
       <View style={{ flex: 2, alignItems: 'center', justifyContent: 'center' }}>
         <Input
           placeholder="Email"
-          leftIcon={<Icon name="email" />}
           onChangeText={email => this.setState({ email })}
           returnKeyType={'next'}
         />
         <Input
           placeholder="Password"
-          leftIcon={<Icon name="lock" />}
           onChangeText={password => this.setState({ password })}
           secureTextEntry={true}
           returnKeyType={'done'}

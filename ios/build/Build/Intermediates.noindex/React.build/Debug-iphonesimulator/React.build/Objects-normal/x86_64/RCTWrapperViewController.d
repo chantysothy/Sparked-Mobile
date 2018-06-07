@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Views/RCTWrapperViewController.m \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Views/RCTWrapperViewController.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Views/RCTNavItem.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/manoli27/SparkEdMobile/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/manoli27/SparkEdMobile/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/manoli27/SparkEdMobile/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h

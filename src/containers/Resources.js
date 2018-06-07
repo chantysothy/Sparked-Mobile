@@ -6,12 +6,12 @@ import PropTypes from 'prop-types';
 import { store } from '../../App';
 
 class Resources extends React.Component {
-  getUnitId = (id: String, name: String) => {
+  getUnitId = (id, name) => {
     this.props.onUnitClick(id, name);
     return this.props.navigation.navigate('ScreenTwo');
   }
   static propTypes = {
-    onUnitClick: PropTypes.func.isRequired,
+    onUnitClick: PropTypes.func,
     navigation: PropTypes.object,
     resourcesReady: PropTypes.bool.isRequired,
     resources: PropTypes.array.isRequired,
