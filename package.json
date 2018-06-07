@@ -37,7 +37,7 @@
     "preset": "jest-expo"
   },
   "lint-staged": {
-    "*.js": [
+    "src/**/*.js": [
       "eslint 'src/**/*.js",
       "git add"
     ]
