@@ -1,34 +1,35 @@
-import React from 'react'
-import { View, Text, TextInput, StyleSheet, Button } from 'react-native'
-import { Ionicons } from '@expo/vector-icons'
-import { Icon, Input, FormInput } from 'react-native-elements'
-import Meteor from 'react-native-meteor'
+import * as React from 'react';
+import { View, Text, Button } from 'react-native';
+import { Icon, Input } from 'react-native-elements';
+import Meteor from 'react-native-meteor';
 
-export default class LoginScreen extends React.Component {
+const Props = {
+  navigation: Object,
+};
+
+export default class LoginScreen extends React.Component<Props> {
   state = {
     email: '',
     password: '',
-    error: ''
+    error: '',
   }
 
-  handleLogin = e => {
-    const { email, password } = this.state
+  handleLogin = () => {
+    const { email, password } = this.state;
     if (!email.length) {
-      this.setState({ error: "Email can't be empty" })
-      return
+      this.setState({ error: "Email can't be empty" });
+      return;
     } else if (!password.length) {
-      this.setState({ error: "Password can't be empty" })
-      return
+      this.setState({ error: "Password can't be empty" });
+      return;
     }
-    Meteor.loginWithPassword(email, password, (err, res) => {
-      err
-        ? this.setState({ error: err.reason })
-        : this.props.navigation.navigate('HomeScreen')
-    })
+    Meteor.loginWithPassword(email, password, (err) => {
+      err ? this.setState({ error: err.reason }) : this.props.navigation.navigate('HomeScreen');
+    });
   }
 
   render() {
-    const { error } = this.state
+    const { error } = this.state;
 
     return (
       <View style={{ flex: 2, alignItems: 'center', justifyContent: 'center' }}>
@@ -50,7 +51,7 @@ export default class LoginScreen extends React.Component {
             icon={{
               name: 'person',
               size: 15,
-              color: 'white'
+              color: 'white',
             }}
             title="Login"
             onPress={e => this.handleLogin(e)}
@@ -58,6 +59,6 @@ export default class LoginScreen extends React.Component {
         </View>
         <Text>{error}</Text>
       </View>
-    )
+    );
   }
 }

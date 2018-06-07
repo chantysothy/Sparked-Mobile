@@ -1,26 +1,27 @@
-import React from 'react'
-import {
-  View,
-  Text,
-  Button,
-  TouchableHighlight,
-  StyleSheet
-} from 'react-native'
-import { Icon, Input } from 'react-native-elements'
-import Meteor from 'react-native-meteor'
+// @flow
+/* eslint no-use-before-define: 'off', no-console: 'off' */
 
-export default class WelcomeScreen extends React.Component {
+import * as React from 'react';
+import { View, Text, Button, StyleSheet } from 'react-native';
+import Meteor from 'react-native-meteor';
+
+const Props = {
+  navigation: Object,
+};
+
+export default class WelcomeScreen extends React.Component<Props> {
   static navigationOptions = {
     header: null,
-    title: 'Welcome'
+    title: 'Welcome',
   }
   state = {
-    link: ''
+    link: '',
   }
 
   _handleSubmit = () => {
-    const value = this._form.getValue()
-    return this.props.navigation.navigate('LoginScreen')
+    const value = this._form.getValue();
+    console.log(value);
+    return this.props.navigation.navigate('LoginScreen');
   }
 
   render() {
@@ -28,20 +29,14 @@ export default class WelcomeScreen extends React.Component {
       <View style={styles.container}>
         <Text style={{ justifyContent: 'center' }}> SparkEd Mobile</Text>
         {!Meteor.userId() ? (
-          <Button
-            title="Connect"
-            onPress={() => this.props.navigation.navigate('LoginScreen')}
-          />
+          <Button title="Connect" onPress={() => this.props.navigation.navigate('LoginScreen')} />
         ) : (
-          <Button
-            title="Connect"
-            onPress={() => this.props.navigation.navigate('ScreenOne')}
-          />
+          <Button title="Connect" onPress={() => this.props.navigation.navigate('ScreenOne')} />
         )}
 
         <Text>{this.state.link}</Text>
       </View>
-    )
+    );
   }
 }
 
@@ -51,6 +46,6 @@ const styles = StyleSheet.create({
     marginTop: 50,
     padding: 20,
     backgroundColor: '#ffffff',
-    flex: 1
-  }
-})
+    flex: 1,
+  },
+});
