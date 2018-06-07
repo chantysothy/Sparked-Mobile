@@ -15,7 +15,7 @@ type Props = {
 }
 
 class Units extends React.Component<Props> {
-  getUnitId = (id, name) => {
+  getUnitId = (id: String, name: String) => {
     this.props.onUnitClick(id, name);
     return this.props.navigation.navigate('ScreenTwo', { id, name });
   }

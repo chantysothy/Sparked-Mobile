@@ -1,13 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { Icon, Input } from 'react-native-elements';
 import Meteor from 'react-native-meteor';
+import PropTypes from 'prop-types';
 
-const Props = {
-  navigation: Object,
-};
-
-export default class LoginScreen extends React.Component<Props> {
+export default class LoginScreen extends React.Component {
   state = {
     email: '',
     password: '',
@@ -62,3 +59,7 @@ export default class LoginScreen extends React.Component<Props> {
     );
   }
 }
+
+LoginScreen.propTypes = {
+  navigation: PropTypes.object,
+};
