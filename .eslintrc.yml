@@ -56,7 +56,6 @@ rules:
 
 globals:
   # collections
-  Foo: false
-  Bar: false
-  fs: false
-  FS: false
+  it: false
+  expect: false
+  jest: false

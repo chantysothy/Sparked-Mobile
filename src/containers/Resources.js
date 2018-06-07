@@ -1,21 +1,20 @@
-// @flow
 import Meteor, { withTracker } from 'react-native-meteor';
-import * as React from 'react';
+import React from 'react';
 import { View, Text, FlatList, ActivityIndicator } from 'react-native';
 import { withNavigation } from 'react-navigation';
+import PropTypes from 'prop-types';
 import { store } from '../../App';
 
-type Props = {
-  onUnitClick: (id: String, name: String) => {},
-  navigation: Object,
-  resourcesReady: Boolean,
-  resources: Array<Object>,
-}
-
-class Resources extends React.Component<Props> {
+class Resources extends React.Component {
   getUnitId = (id: String, name: String) => {
     this.props.onUnitClick(id, name);
     return this.props.navigation.navigate('ScreenTwo');
+  }
+  static propTypes = {
+    onUnitClick: PropTypes.func.isRequired,
+    navigation: PropTypes.object,
+    resourcesReady: PropTypes.bool.isRequired,
+    resources: PropTypes.array.isRequired,
   }
 
   renderUnit = ({ item }) => (

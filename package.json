@@ -25,7 +25,7 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "jest",
+    "test": "jest ",
     "prettier": "prettier 'src/**/*.js'",
     "precommit": "lint-staged",
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
