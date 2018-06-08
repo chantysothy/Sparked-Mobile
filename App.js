@@ -6,10 +6,10 @@ import WelcomeScreen from './src/screens/WelcomeScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/SignUpScreen';
 import AppDrawerNavigator from './src/screens/DrawerNavigator';
-import unitReducer from './src/reducers/unitReducer';
 import './src/helpers/connectMeteor';
+import rootReducer from './src/reducers/combinedReducers';
 
-export const store = createStore(unitReducer);
+export const store = createStore(rootReducer);
 
 const App = () => (
   <Provider store={store}>

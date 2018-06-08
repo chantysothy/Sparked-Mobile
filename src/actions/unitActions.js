@@ -1,6 +1,6 @@
-export default function mapDispatchToProps(dispatch: any) {
+export default function mapDispatchToProps(dispatch) {
   return {
-    onUnitClick: (id: String, name: String) => {
+    onUnitClick: (id, name) => {
       const action = {
         type: 'SET_UNIT',
         unitId: id,
