@@ -21,7 +21,7 @@ export default class LoginScreen extends React.Component {
       return;
     }
     Meteor.loginWithPassword(email, password, (err) => {
-      err ? this.setState({ error: err.reason }) : this.props.navigation.navigate('HomeScreen');
+      err ? this.setState({ error: err.reason }) : this.props.navigation.navigate('ScreenOne');
     });
   }
 
