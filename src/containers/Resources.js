@@ -13,8 +13,9 @@ class Resources extends React.Component {
     this.isGet = false;
   }
   setResourceStates = (id, name, type) => {
-    const baseUrl = 'http://localhost:3000/cdn/storage/';
-    const resourceUrl = `${baseUrl}/Resources/${id}/original/${id}.pdf`;
+    const baseUrl = 'http://10.1.0.142:3000/cdn/storage/';
+
+    const resourceUrl = `${baseUrl}/Resources/${id}/original/${id}.${type}`;
     this.props.onResourceClick(id, name, type, resourceUrl);
 
     return this.props.navigation.navigate('ViewResourceScreen');
@@ -27,7 +28,7 @@ class Resources extends React.Component {
   }
 
   renderUnit = ({ item }) => (
-    <Text onPress={() => this.setResourceStates(item._id, item.name, item.type)}>{item.name}</Text>
+    <Text onPress={() => this.setResourceStates(item._id, item.name, item.ext)}>{item.name}</Text>
   )
   render() {
     const { resourcesReady, resources } = this.props;
