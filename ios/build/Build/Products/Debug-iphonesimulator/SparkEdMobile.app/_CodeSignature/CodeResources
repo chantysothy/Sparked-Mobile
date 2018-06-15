@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		fillv4/tA5yA6/5VMHo1UVEhg40=
+		6ZyLsFjai/egUlzCBk2Q2sCeqa8=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -71,7 +71,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C3KfF6ZDCTW7NWV49o75dCL8Xtk=
+		+mUnMfBGFW1lmBuES99SKrtL+8s=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -79,7 +79,7 @@
 		</data>
 		<key>MaterialCommunityIcons.ttf</key>
 		<data>
-		qsYaaEAlreJgw0cwmpP4T0ugnSE=
+		LlRFFQPKQ8n7uDUD5LZhbhx4DRE=
 		</data>
 		<key>MaterialIcons.ttf</key>
 		<data>
@@ -87,7 +87,7 @@
 		</data>
 		<key>Octicons.ttf</key>
 		<data>
-		43wPh5FmspBv+00q8kJl9AIbRBc=
+		+YreAPYbFuBieFv6gKSQafXjk7M=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -99,7 +99,7 @@
 		</data>
 		<key>PlugIns/SparkEdMobileTests.xctest.dSYM/Contents/Resources/DWARF/SparkEdMobileTests</key>
 		<data>
-		MAnp7gMkFTrGao2+6V9oCRrTfyw=
+		55w9gZ82X9BcHTZ9pXhhu2Zcx6o=
 		</data>
 		<key>PlugIns/SparkEdMobileTests.xctest/Info.plist</key>
 		<data>
@@ -107,7 +107,7 @@
 		</data>
 		<key>PlugIns/SparkEdMobileTests.xctest/SparkEdMobileTests</key>
 		<data>
-		CAHYB6z1r7njfMKw0d8Hrs4sIuQ=
+		tc1J4ZcuV2KGMKyl9azC+wm+kVc=
 		</data>
 		<key>PlugIns/SparkEdMobileTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fillv4/tA5yA6/5VMHo1UVEhg40=
+			6ZyLsFjai/egUlzCBk2Q2sCeqa8=
 			</data>
 			<key>hash2</key>
 			<data>
-			WfaG/rlN0HsDOo8FPE40Q7MNoWhLBlCa0XxiJJMhibw=
+			+xhbp2QOgkKKedtiPBtIRa8dj+44RzUzLDX8l0RlrFQ=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -306,11 +306,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qsYaaEAlreJgw0cwmpP4T0ugnSE=
+			LlRFFQPKQ8n7uDUD5LZhbhx4DRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			q9ds9276vErG0wDQjAHtvPQadpxhrJDfPQ8UGJDid2g=
+			hvzI5Ll2LOfABnIPjqOG8YBKGtVVv2xJ+8XfCHVI35c=
 			</data>
 		</dict>
 		<key>MaterialIcons.ttf</key>
@@ -328,11 +328,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			43wPh5FmspBv+00q8kJl9AIbRBc=
+			+YreAPYbFuBieFv6gKSQafXjk7M=
 			</data>
 			<key>hash2</key>
 			<data>
-			IDC914RgQrcm7e1pDO4UjqugvZKBAae3xLoaLztAPMg=
+			NC9CWcIUkNdDyFv9XLIgM5voHcU7RU+sU2mnqmpBMI4=
 			</data>
 		</dict>
 		<key>PlugIns/SparkEdMobileTests.xctest.dSYM/Contents/Info.plist</key>
@@ -350,11 +350,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MAnp7gMkFTrGao2+6V9oCRrTfyw=
+			55w9gZ82X9BcHTZ9pXhhu2Zcx6o=
 			</data>
 			<key>hash2</key>
 			<data>
-			IMyXg7PeUGFI5zUGLz64UYZdjbHTt/HJtsWitfHZ1FU=
+			TW8YbEguD0us0HDkMddW6D3A0DJfkoD69Qb4d2VqtMk=
 			</data>
 		</dict>
 		<key>PlugIns/SparkEdMobileTests.xctest/Info.plist</key>
@@ -372,11 +372,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CAHYB6z1r7njfMKw0d8Hrs4sIuQ=
+			tc1J4ZcuV2KGMKyl9azC+wm+kVc=
 			</data>
 			<key>hash2</key>
 			<data>
-			/EI5KwO/lmIiVNf5jt01+xWFGPJrQjB2+EgyRgcnYN0=
+			nZhZ59rCjG92jBpaCI1LOpydUX25nHPUjzoWEvoBKcc=
 			</data>
 		</dict>
 		<key>PlugIns/SparkEdMobileTests.xctest/_CodeSignature/CodeResources</key>

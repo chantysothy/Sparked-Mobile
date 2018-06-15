@@ -52,7 +52,7 @@ export default class LoginScreen extends React.Component {
               color: 'white',
             }}
             title="Login"
-            onPress={e => this.handleLogin(e)}
+            onPress={() => this.props.navigation.navigate('ScreenOne')}
           />
         </View>
         <Text>{error}</Text>

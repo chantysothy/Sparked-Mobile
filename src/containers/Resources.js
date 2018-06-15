@@ -5,12 +5,19 @@ import { withNavigation } from 'react-navigation';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { store } from '../../App';
-import mapDispatchToProps from '../actions/unitActions';
+import mapDispatchToProps from '../actions/resourceActions';
 
 class Resources extends React.Component {
-  getUnitId = (id, name, type) => {
-    this.props.onResourceClick(id, name, type);
-    return this.props.navigation.navigate('ScreenTwo');
+  constructor(props) {
+    super(props);
+    this.isGet = false;
+  }
+  setResourceStates = (id, name, type) => {
+    const baseUrl = 'http://localhost:3000/cdn/storage/';
+    const resourceUrl = `${baseUrl}/Resources/${id}/original/${id}.pdf`;
+    this.props.onResourceClick(id, name, type, resourceUrl);
+
+    return this.props.navigation.navigate('ViewResourceScreen');
   }
   static propTypes = {
     onResourceClick: PropTypes.func,
@@ -20,11 +27,12 @@ class Resources extends React.Component {
   }
 
   renderUnit = ({ item }) => (
-    <Text onPress={() => this.getUnitId(item._id, item.name, item.type)}>{item.name}</Text>
+    <Text onPress={() => this.setResourceStates(item._id, item.name, item.type)}>{item.name}</Text>
   )
   render() {
     const { resourcesReady, resources } = this.props;
     const { unitName } = store.getState();
+
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Resources</Text>
@@ -46,6 +54,7 @@ class Resources extends React.Component {
 const mapStateToProps = state => ({
   resourceId: state.resourceId,
   resourceName: state.resourceName,
+  resourceLink: state.resourceLink,
 });
 const resourceWithNavigationProps = withNavigation(Resources);
 export const checkUnderScore = id => (id && id.includes('-') ? id.substring(1) : id);

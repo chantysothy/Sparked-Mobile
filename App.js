@@ -6,6 +6,7 @@ import WelcomeScreen from './src/screens/WelcomeScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/SignUpScreen';
 import AppDrawerNavigator from './src/screens/DrawerNavigator';
+import ViewResourceScreen from './src/screens/ViewResourceScreen';
 import './src/helpers/connectMeteor';
 import rootReducer from './src/reducers/combinedReducers';
 
@@ -24,6 +25,7 @@ const AppStackNavigator = new createStackNavigator(
     LoginScreen: { screen: LoginScreen },
     RegisterScreen: { screen: RegisterScreen },
     DrawerNavigator: { screen: AppDrawerNavigator },
+    ViewResourceScreen: { screen: ViewResourceScreen },
   },
   {
     navigationOptions: {
