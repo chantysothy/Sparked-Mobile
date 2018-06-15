@@ -7,9 +7,11 @@ import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/SignUpScreen';
 import AppDrawerNavigator from './src/screens/DrawerNavigator';
 import ViewResourceScreen from './src/screens/ViewResourceScreen';
+import ImagesScreen from './src/screens/ImagesScreen';
 import './src/helpers/connectMeteor';
 import rootReducer from './src/reducers/combinedReducers';
 
+// ImagesScreen
 export const store = createStore(rootReducer);
 
 const App = () => (
@@ -26,6 +28,7 @@ const AppStackNavigator = new createStackNavigator(
     RegisterScreen: { screen: RegisterScreen },
     DrawerNavigator: { screen: AppDrawerNavigator },
     ViewResourceScreen: { screen: ViewResourceScreen },
+    ImagesScreen: { screen: ImagesScreen },
   },
   {
     navigationOptions: {

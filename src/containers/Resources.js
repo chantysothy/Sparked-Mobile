@@ -17,7 +17,9 @@ class Resources extends React.Component {
 
     const resourceUrl = `${baseUrl}/Resources/${id}/original/${id}.${type}`;
     this.props.onResourceClick(id, name, type, resourceUrl);
-
+    if (type === 'png') {
+      return this.props.navigation.navigate('ImagesScreen');
+    }
     return this.props.navigation.navigate('ViewResourceScreen');
   }
   static propTypes = {

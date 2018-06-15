@@ -32,8 +32,8 @@ export default class PDFExample extends React.Component {
           />
         ) : resourceType === 'png' ? (
           <Image
-            source={{ uri: resourceLink }}
-            style={{ height: 200, resizeMode: 'stretch', margin: 5 }}
+            source={{ uri: 'https://facebook.github.io/react/img/logo_og.png' }}
+            style={{ width: 400, height: 400 }}
           />
         ) : (
           <Text>File not supporteed</Text>
