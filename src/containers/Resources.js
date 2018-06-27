@@ -13,14 +13,19 @@ class Resources extends React.Component {
     this.isGet = false;
   }
   setResourceStates = (id, name, type) => {
-    const baseUrl = 'http://10.1.0.142:3000/cdn/storage/';
-
-    const resourceUrl = `${baseUrl}/Resources/${id}/original/${id}.${type}`;
+    // const baseUrl = 'http://10.1.0.149:3000/cdn/storage/';
+    const baseUrl = 'http://13.232.61.192/cdn/storage/';
+    const resourceUrl = `${baseUrl}Resources/${id}/original/${id}.${type}`;
     this.props.onResourceClick(id, name, type, resourceUrl);
-    if (type === 'png') {
-      return this.props.navigation.navigate('ImagesScreen');
+
+    switch (type) {
+      case 'png':
+        return this.props.navigation.navigate('ImagesScreen');
+      case 'pdf':
+        return this.props.navigation.navigate('ViewResourceScreen');
+      default:
+        break;
     }
-    return this.props.navigation.navigate('ViewResourceScreen');
   }
   static propTypes = {
     onResourceClick: PropTypes.func,

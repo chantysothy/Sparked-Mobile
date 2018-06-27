@@ -16,28 +16,19 @@ export default class PDFExample extends React.Component {
     console.log(resourceLink);
     return (
       <View style={styles.container}>
-        {resourceType === 'pdf' ? (
-          <Pdf
-            source={source}
-            onLoadComplete={(numberOfPages, filePath) => {
-              console.log(`number of pages: ${numberOfPages}`);
-            }}
-            onPageChanged={(page, numberOfPages) => {
-              console.log(`current page: ${page}`);
-            }}
-            onError={(error) => {
-              console.log(error);
-            }}
-            style={styles.pdf}
-          />
-        ) : resourceType === 'png' ? (
-          <Image
-            source={{ uri: 'https://facebook.github.io/react/img/logo_og.png' }}
-            style={{ width: 400, height: 400 }}
-          />
-        ) : (
-          <Text>File not supporteed</Text>
-        )}
+        <Pdf
+          source={source}
+          onLoadComplete={(numberOfPages, filePath) => {
+            console.log(`number of pages: ${numberOfPages}`);
+          }}
+          onPageChanged={(page, numberOfPages) => {
+            console.log(`current page: ${page}`);
+          }}
+          onError={(error) => {
+            console.log(error);
+          }}
+          style={styles.pdf}
+        />
       </View>
     );
   }
