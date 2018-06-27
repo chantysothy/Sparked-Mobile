@@ -20,9 +20,12 @@ class Resources extends React.Component {
 
     switch (type) {
       case 'png':
-        return this.props.navigation.navigate('ImagesScreen');
+        // return this.props.navigation.navigate('ImagesScreen');
+        return this.props.navigation.navigate('VideoScreen');
       case 'pdf':
         return this.props.navigation.navigate('ViewResourceScreen');
+      case 'video':
+        return this.props.navigation.navigate('VideoScreen');
       default:
         break;
     }

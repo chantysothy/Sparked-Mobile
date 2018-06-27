@@ -8,6 +8,7 @@ import RegisterScreen from './src/screens/SignUpScreen';
 import AppDrawerNavigator from './src/screens/DrawerNavigator';
 import ViewResourceScreen from './src/screens/ViewResourceScreen';
 import ImagesScreen from './src/screens/ImagesScreen';
+import VideoScreen from './src/screens/VideoScreen';
 import './src/helpers/connectMeteor';
 import rootReducer from './src/reducers/combinedReducers';
 
@@ -29,6 +30,7 @@ const AppStackNavigator = new createStackNavigator(
     DrawerNavigator: { screen: AppDrawerNavigator },
     ViewResourceScreen: { screen: ViewResourceScreen },
     ImagesScreen: { screen: ImagesScreen },
+    VideoScreen: { screen: VideoScreen },
   },
   {
     navigationOptions: {

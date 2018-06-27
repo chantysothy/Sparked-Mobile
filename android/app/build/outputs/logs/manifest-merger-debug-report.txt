@@ -1,18 +1,56 @@
 -- Merging decision tree log ---
 manifest
 ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:1-32:12
+MERGED from [:react-native-video] /Users/manoli27/SparkEdMobile/node_modules/react-native-video/android-exoplayer/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /Users/manoli27/SparkEdMobile/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-pdf] /Users/manoli27/SparkEdMobile/node_modules/react-native-pdf/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-fetch-blob] /Users/manoli27/SparkEdMobile/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/cc1b6e1d552b23bab661d0822231f783/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/88daa34661b473e353e1ad5167c9d84d/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-2.7.3.aar/b1a13f4e8772ba47c13f0dd2310cd29c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:extension-okhttp:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/extension-okhttp-2.7.3.aar/8b1abb682ffe2517609fc4a96bae5901/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/707b3f2ec152d392582d663916f9c1a6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.barteksc:android-pdf-viewer:3.0.0-beta.5] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-3.0.0-beta.5.aar/1edf1956049da3c07d8a4be9da144150/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.barteksc:pdfium-android:1.8.2] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.8.2.aar/bb747f3129f622ad813eb82222fc8d0e/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/57d4bbd831781fba818506add23f4f30/AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/7009c40fd6a06d6a31b6259ae1d44f6f/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/54be1ba538917b2a9c95cb01b879932e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/f11aaed79ac99b204359d7db8a67cb52/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/c0f3808499d50860d787e41be06c4913/AndroidManifest.xml:1:1-3:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-dash-2.7.3.aar/59ade918e99f4f3288da6d02fb874fc0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-hls-2.7.3.aar/9f54e1c554818266443b69fed5958e3a/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-smoothstreaming-2.7.3.aar/97abe11874353dff5ad9b3696bcd15ec/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.7.3.aar/80fce986e201fd15a8a8c2fb2554aca8/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-core-2.7.3.aar/34a71a6a2a32d9a179d1a15827998d64/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/94919b09e6106ea5eca5db965de9f829/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/d514322e9e7958235df1d651c06e3005/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/f55ef83e18a500f7a84369aadbfa40ff/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/cd670cfd19b33eca613c794b8175bd4b/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e9df8783025dd602a7797bbf9c4433fa/AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/2c1ee8ae0ad90458e410733d4331c7a5/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/5cfecc734df56b4d700415296db8a2cf/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/18c898f4d13f7cdb3cf4f5eaf42ebdad/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/bebe001fba4bf1d3baca11a6894fcbc2/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:1-32:12
+INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:1-32:12
 	package
 		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:2:5-32
 		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:1-32:12
+		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:1-32:12
 		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:11-69
-	android:versionCode
-		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:4:5-67
 	android:name
@@ -23,28 +61,40 @@ ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xm
 		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:5:22-78
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:8:5-77
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/cc1b6e1d552b23bab661d0822231f783/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/cc1b6e1d552b23bab661d0822231f783/AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:8:22-75
 application
 ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:10:5-30:19
-MERGED from [SparkEdMobile:react-native-fetch-blob:unspecified] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/SparkEdMobile/react-native-fetch-blob/unspecified/AndroidManifest.xml:11:5-12:19
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/org.webkit/android-jsc/r174650/AndroidManifest.xml:2:3-17
+MERGED from [:react-native-fetch-blob] /Users/manoli27/SparkEdMobile/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] /Users/manoli27/SparkEdMobile/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/cc1b6e1d552b23bab661d0822231f783/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/cc1b6e1d552b23bab661d0822231f783/AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/88daa34661b473e353e1ad5167c9d84d/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/88daa34661b473e353e1ad5167c9d84d/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/57d4bbd831781fba818506add23f4f30/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/57d4bbd831781fba818506add23f4f30/AndroidManifest.xml:29:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/f11aaed79ac99b204359d7db8a67cb52/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/f11aaed79ac99b204359d7db8a67cb52/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/c0f3808499d50860d787e41be06c4913/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/c0f3808499d50860d787e41be06c4913/AndroidManifest.xml:2:3-17
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/94919b09e6106ea5eca5db965de9f829/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/94919b09e6106ea5eca5db965de9f829/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/d514322e9e7958235df1d651c06e3005/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/d514322e9e7958235df1d651c06e3005/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/f55ef83e18a500f7a84369aadbfa40ff/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/f55ef83e18a500f7a84369aadbfa40ff/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/cd670cfd19b33eca613c794b8175bd4b/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/cd670cfd19b33eca613c794b8175bd4b/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e9df8783025dd602a7797bbf9c4433fa/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e9df8783025dd602a7797bbf9c4433fa/AndroidManifest.xml:29:5-20
 	android:label
 		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:12:7-39
-	android:allowBackup
-		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:14:7-34
 	android:icon
 		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:13:7-41
+	android:allowBackup
+		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:14:7-34
 	android:theme
 		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:15:7-38
 	android:name
@@ -59,7 +109,7 @@ ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xm
 		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:19:9-79
 	android:name
 		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:17:9-37
-intent-filter#android.intent.action.DOWNLOAD_COMPLETE+android.intent.action.DOWNLOAD_COMPLETE+android.intent.action.DOWNLOAD_COMPLETE+android.intent.action.MAIN+android.intent.category.LAUNCHER
+intent-filter#action:name:android.intent.action.DOWNLOAD_COMPLETE+action:name:android.intent.action.DOWNLOAD_COMPLETE+action:name:android.intent.action.DOWNLOAD_COMPLETE+action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:21:9-27:25
 action#android.intent.action.MAIN
 ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:22:13-65
@@ -79,47 +129,95 @@ ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xm
 		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:29:17-81
 uses-sdk
 INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [SparkEdMobile:react-native-vector-icons:unspecified] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/SparkEdMobile/react-native-vector-icons/unspecified/AndroidManifest.xml:7:5-9:41
-MERGED from [SparkEdMobile:react-native-pdf:unspecified] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/SparkEdMobile/react-native-pdf/unspecified/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.barteksc:android-pdf-viewer:3.0.0-beta.5] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.github.barteksc/android-pdf-viewer/3.0.0-beta.5/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:pdfium-android:1.8.2] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.github.barteksc/pdfium-android/1.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [SparkEdMobile:react-native-fetch-blob:unspecified] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/SparkEdMobile/react-native-fetch-blob/unspecified/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:2:3-70
+INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-video] /Users/manoli27/SparkEdMobile/node_modules/react-native-video/android-exoplayer/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-video] /Users/manoli27/SparkEdMobile/node_modules/react-native-video/android-exoplayer/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/manoli27/SparkEdMobile/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/manoli27/SparkEdMobile/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-pdf] /Users/manoli27/SparkEdMobile/node_modules/react-native-pdf/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-pdf] /Users/manoli27/SparkEdMobile/node_modules/react-native-pdf/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-fetch-blob] /Users/manoli27/SparkEdMobile/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] /Users/manoli27/SparkEdMobile/node_modules/react-native-fetch-blob/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/cc1b6e1d552b23bab661d0822231f783/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/cc1b6e1d552b23bab661d0822231f783/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/88daa34661b473e353e1ad5167c9d84d/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/88daa34661b473e353e1ad5167c9d84d/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.exoplayer:exoplayer:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-2.7.3.aar/b1a13f4e8772ba47c13f0dd2310cd29c/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-2.7.3.aar/b1a13f4e8772ba47c13f0dd2310cd29c/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:extension-okhttp:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/extension-okhttp-2.7.3.aar/8b1abb682ffe2517609fc4a96bae5901/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:extension-okhttp:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/extension-okhttp-2.7.3.aar/8b1abb682ffe2517609fc4a96bae5901/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/707b3f2ec152d392582d663916f9c1a6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/707b3f2ec152d392582d663916f9c1a6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.barteksc:android-pdf-viewer:3.0.0-beta.5] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-3.0.0-beta.5.aar/1edf1956049da3c07d8a4be9da144150/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:android-pdf-viewer:3.0.0-beta.5] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-3.0.0-beta.5.aar/1edf1956049da3c07d8a4be9da144150/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.8.2] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.8.2.aar/bb747f3129f622ad813eb82222fc8d0e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.8.2] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.8.2.aar/bb747f3129f622ad813eb82222fc8d0e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/57d4bbd831781fba818506add23f4f30/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/57d4bbd831781fba818506add23f4f30/AndroidManifest.xml:21:5-23:54
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/7009c40fd6a06d6a31b6259ae1d44f6f/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/7009c40fd6a06d6a31b6259ae1d44f6f/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/54be1ba538917b2a9c95cb01b879932e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/54be1ba538917b2a9c95cb01b879932e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/f11aaed79ac99b204359d7db8a67cb52/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/f11aaed79ac99b204359d7db8a67cb52/AndroidManifest.xml:2:3-70
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-dash-2.7.3.aar/59ade918e99f4f3288da6d02fb874fc0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-dash-2.7.3.aar/59ade918e99f4f3288da6d02fb874fc0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-hls-2.7.3.aar/9f54e1c554818266443b69fed5958e3a/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-hls-2.7.3.aar/9f54e1c554818266443b69fed5958e3a/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-smoothstreaming-2.7.3.aar/97abe11874353dff5ad9b3696bcd15ec/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-smoothstreaming-2.7.3.aar/97abe11874353dff5ad9b3696bcd15ec/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.7.3.aar/80fce986e201fd15a8a8c2fb2554aca8/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-ui-2.7.3.aar/80fce986e201fd15a8a8c2fb2554aca8/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-core-2.7.3.aar/34a71a6a2a32d9a179d1a15827998d64/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/exoplayer-core-2.7.3.aar/34a71a6a2a32d9a179d1a15827998d64/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/94919b09e6106ea5eca5db965de9f829/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/94919b09e6106ea5eca5db965de9f829/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/d514322e9e7958235df1d651c06e3005/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/d514322e9e7958235df1d651c06e3005/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/f55ef83e18a500f7a84369aadbfa40ff/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/f55ef83e18a500f7a84369aadbfa40ff/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/cd670cfd19b33eca613c794b8175bd4b/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/cd670cfd19b33eca613c794b8175bd4b/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e9df8783025dd602a7797bbf9c4433fa/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e9df8783025dd602a7797bbf9c4433fa/AndroidManifest.xml:21:5-23:58
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/2c1ee8ae0ad90458e410733d4331c7a5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/2c1ee8ae0ad90458e410733d4331c7a5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/5cfecc734df56b4d700415296db8a2cf/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/5cfecc734df56b4d700415296db8a2cf/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/18c898f4d13f7cdb3cf4f5eaf42ebdad/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/18c898f4d13f7cdb3cf4f5eaf42ebdad/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/bebe001fba4bf1d3baca11a6894fcbc2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/bebe001fba4bf1d3baca11a6894fcbc2/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/57d4bbd831781fba818506add23f4f30/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v4:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:support-v4:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/57d4bbd831781fba818506add23f4f30/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/94919b09e6106ea5eca5db965de9f829/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/94919b09e6106ea5eca5db965de9f829/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/d514322e9e7958235df1d651c06e3005/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/d514322e9e7958235df1d651c06e3005/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/f55ef83e18a500f7a84369aadbfa40ff/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/f55ef83e18a500f7a84369aadbfa40ff/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/cd670cfd19b33eca613c794b8175bd4b/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/cd670cfd19b33eca613c794b8175bd4b/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e9df8783025dd602a7797bbf9c4433fa/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e9df8783025dd602a7797bbf9c4433fa/AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:support-v4:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:support-v4:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/57d4bbd831781fba818506add23f4f30/AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:support-v4:25.3.1] /Users/manoli27/SparkEdMobile/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/AndroidManifest.xml:26:9-47
-android:uses-permission#android.permission.READ_PHONE_STATE
+		ADDED from [com.android.support:support-v4:25.3.1] /Users/manoli27/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/57d4bbd831781fba818506add23f4f30/AndroidManifest.xml:26:9-47
+uses-permission#android.permission.READ_PHONE_STATE
 IMPLIED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
 IMPLIED from /Users/manoli27/SparkEdMobile/android/app/src/main/AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

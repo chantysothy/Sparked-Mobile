@@ -49,6 +49,8 @@
     "react-native-meteor": "^1.3.0",
     "react-native-pdf": "^3.0.16",
     "react-native-vector-icons": "^4.6.0",
+    "react-native-video": "^2.3.1",
+    "react-native-video-player": "^0.9.1",
     "react-navigation": "^2.0.4",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
