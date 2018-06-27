@@ -1,6 +1,9 @@
 /* eslint no-case-declarations: 'off' */
-const initialState = {
+export const initialState = {
   unitId: '',
+  resourceId: '',
+  resourceName: '',
+  resourceType: '',
 };
 
 export default function unitReducer(state = initialState, action) {

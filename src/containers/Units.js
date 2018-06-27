@@ -38,6 +38,10 @@ class Units extends React.Component {
     );
   }
 }
+// const mapStateToProps = state => ({
+//   unitId: state.unitId,
+//   unitName: state.unitName,
+// });
 const mapStateToProps = state => ({
   unitId: state.unitId,
   unitName: state.unitName,

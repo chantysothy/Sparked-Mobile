@@ -1,0 +1,4 @@
+#Fri Jun 15 15:34:39 CAT 2018
+base.0=/Users/manoli27/SparkEdMobile/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/manoli27/SparkEdMobile/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

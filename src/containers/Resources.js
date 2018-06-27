@@ -3,26 +3,44 @@ import React from 'react';
 import { View, Text, FlatList, ActivityIndicator } from 'react-native';
 import { withNavigation } from 'react-navigation';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { store } from '../../App';
+import mapDispatchToProps from '../actions/resourceActions';
 
 class Resources extends React.Component {
-  getUnitId = (id, name) => {
-    this.props.onUnitClick(id, name);
-    return this.props.navigation.navigate('ScreenTwo');
+  constructor(props) {
+    super(props);
+    this.isGet = false;
+  }
+  setResourceStates = (id, name, type) => {
+    // const baseUrl = 'http://10.1.0.149:3000/cdn/storage/';
+    const baseUrl = 'http://13.232.61.192/cdn/storage/';
+    const resourceUrl = `${baseUrl}Resources/${id}/original/${id}.${type}`;
+    this.props.onResourceClick(id, name, type, resourceUrl);
+
+    switch (type) {
+      case 'png':
+        return this.props.navigation.navigate('ImagesScreen');
+      case 'pdf':
+        return this.props.navigation.navigate('ViewResourceScreen');
+      default:
+        break;
+    }
   }
   static propTypes = {
-    onUnitClick: PropTypes.func,
+    onResourceClick: PropTypes.func,
     navigation: PropTypes.object,
     resourcesReady: PropTypes.bool.isRequired,
     resources: PropTypes.array.isRequired,
   }
 
   renderUnit = ({ item }) => (
-    <Text onPress={() => this.getUnitId(item._id, item.name)}>{item.name}</Text>
+    <Text onPress={() => this.setResourceStates(item._id, item.name, item.ext)}>{item.name}</Text>
   )
   render() {
     const { resourcesReady, resources } = this.props;
     const { unitName } = store.getState();
+
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Resources</Text>
@@ -41,21 +59,27 @@ class Resources extends React.Component {
     );
   }
 }
-// const mapStateToProps = (state, props) => ({
-//   unitId: state.unitId,
-//   unitName: state.unitName,
-// });
-const unitWithNavigationProps = withNavigation(Resources);
-export const checkUnderScore = (id: String) => (id.includes('-') ? id.substring(1) : id);
+const mapStateToProps = state => ({
+  resourceId: state.resourceId,
+  resourceName: state.resourceName,
+  resourceLink: state.resourceLink,
+});
+const resourceWithNavigationProps = withNavigation(Resources);
+export const checkUnderScore = id => (id && id.includes('-') ? id.substring(1) : id);
 
-// const allUnits =  connect(mapStateToProps, mapDispatchToProps)(unitWithNavigationProps);
+const allResources = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(resourceWithNavigationProps);
 
 export default withTracker(() => {
-  const { unitId } = store.getState();
+  const {
+    unitReducer: { unitId },
+  } = store.getState();
   const checkedId = checkUnderScore(unitId);
   const handle = Meteor.subscribe('resourcess');
   return {
     resourcesReady: handle.ready(),
     resources: Meteor.collection('Resources').find({ 'meta.unitId': checkedId }),
   };
-})(unitWithNavigationProps);
+})(allResources);
