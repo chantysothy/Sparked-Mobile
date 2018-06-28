@@ -17,14 +17,14 @@ class Resources extends React.Component {
     const baseUrl = 'http://13.232.61.192/cdn/storage/';
     const resourceUrl = `${baseUrl}Resources/${id}/original/${id}.${type}`;
     this.props.onResourceClick(id, name, type, resourceUrl);
-
+    console.log(type);
     switch (type) {
       case 'png':
-        // return this.props.navigation.navigate('ImagesScreen');
-        return this.props.navigation.navigate('VideoScreen');
+        return this.props.navigation.navigate('ImagesScreen');
+      // return this.props.navigation.navigate('VideoScreen');
       case 'pdf':
         return this.props.navigation.navigate('ViewResourceScreen');
-      case 'video':
+      case 'mp4':
         return this.props.navigation.navigate('VideoScreen');
       default:
         break;
