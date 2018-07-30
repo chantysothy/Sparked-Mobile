@@ -1,11 +1,14 @@
 import Meteor, { withTracker } from 'react-native-meteor';
 import React from 'react';
-import { View, Text, FlatList, ActivityIndicator, StyleSheet } from 'react-native';
+import { View, Text, FlatList, ActivityIndicator, StyleSheet, YellowBox } from 'react-native';
 import { withNavigation } from 'react-navigation';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { store } from '../../App';
 import mapDispatchToProps from '../actions/resourceActions';
+
+// ignore the isMounted() warning;
+YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated']);
 
 class Resources extends React.Component {
   constructor(props) {
@@ -20,7 +23,6 @@ class Resources extends React.Component {
     switch (type) {
       case 'png':
         return this.props.navigation.navigate('ImagesScreen');
-      // return this.props.navigation.navigate('VideoScreen');
       case 'pdf':
         return this.props.navigation.navigate('ViewResourceScreen');
       case 'mp4':
@@ -43,10 +45,10 @@ class Resources extends React.Component {
       {item.name}
     </Text>
   )
+
   render() {
     const { resourcesReady, resources } = this.props;
     const { unitName } = store.getState();
-
     return (
       <View style={Styles.centersContainer}>
         <Text style={Styles.titleText}>Resources</Text>
@@ -86,6 +88,7 @@ export default withTracker(() => {
   const handle = Meteor.subscribe('resourcess');
   return {
     resourcesReady: handle.ready(),
+    handle,
     resources: Meteor.collection('Resources').find({ 'meta.unitId': checkedId }),
   };
 })(allResources);
