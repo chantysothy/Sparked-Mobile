@@ -1,18 +1,26 @@
 /* eslint no-return-assign: 0 */
 import React, { Component } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 import VideoPlayer from 'react-native-video-player';
 import { store } from '../../App';
 
 const thumbnailUrl = 'http://13.232.61.192/uploads/logos/hMzpjRnRgkyjfEwFs.png'; // temporary video thumbnail as the logo
 
 export default class VideoScreen extends Component {
+  state = {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+  }
+
   render() {
     const {
       resourceReducer: { resourceLink, resourceName },
     } = store.getState();
+    const { flexDirection, alignItems, justifyContent } = this.state;
+    const layoutStyle = { flexDirection, justifyContent, alignItems };
     return (
-      <View>
+      <View style={styles.container}>
         <Text style={{ fontSize: 22, marginTop: 22 }}>{resourceName.replace(/\.[^/.]+$/, '')}</Text>
         <VideoPlayer
           endWithThumbnail
@@ -23,10 +31,27 @@ export default class VideoScreen extends Component {
           duration={undefined}
           ref={r => (this.player = r)}
         />
-        <Button onPress={() => this.player.stop()} title="Stop" />
-        <Button onPress={() => this.player.pause()} title="Pause" />
-        <Button onPress={() => this.player.resume()} title="Resume" />
+        <View style={[styles.layout, layoutStyle]}>
+          <Button style={styles.box} onPress={() => this.player.stop()} title="Stop" />
+          <Button style={styles.box} onPress={() => this.player.pause()} title="Pause" />
+          <Button style={styles.box} onPress={() => this.player.resume()} title="Resume" />
+        </View>
       </View>
     );
   }
 }
+
+const styles = new StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  layout: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.05)',
+  },
+  box: {
+    padding: 25,
+    margin: 5,
+    backgroundColor: 'steelblue',
+  },
+});

@@ -6,9 +6,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08a09e34-43a3-4584-b907-db1ead362306" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../src/containers/Resources.js" afterPath="$PROJECT_DIR$/../src/containers/Resources.js" />
-    </list>
+    <list default="true" id="08a09e34-43a3-4584-b907-db1ead362306" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
