@@ -4,7 +4,7 @@ import { View, Text, Button } from 'react-native';
 import VideoPlayer from 'react-native-video-player';
 import { store } from '../../App';
 
-const thumbnailUrl = 'http://13.232.61.192/uploads/logos/hMzpjRnRgkyjfEwFs.png'; // temporary video thumbnail
+const thumbnailUrl = 'http://13.232.61.192/uploads/logos/hMzpjRnRgkyjfEwFs.png'; // temporary video thumbnail as the logo
 
 export default class VideoScreen extends Component {
   render() {

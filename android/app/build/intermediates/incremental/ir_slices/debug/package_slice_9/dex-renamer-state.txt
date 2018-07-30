@@ -1,4 +1,4 @@
-#Wed Jun 27 19:14:59 CAT 2018
-base.0=/Users/manoli27/SparkEdMobile/android/app/build/intermediates/transforms/dexMerger/debug/9
+#Mon Jul 30 12:40:03 CAT 2018
+base.0=/Users/manoli27/SparkEdMobile/android/app/build/intermediates/transforms/dexMerger/debug/26
 path.0=classes.dex
 renamed.0=classes.dex

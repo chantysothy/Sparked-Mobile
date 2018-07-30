@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
-import { Input } from 'react-native-elements';
+import { View, Text, Button, TextInput } from 'react-native';
 import Meteor from 'react-native-meteor';
 import PropTypes from 'prop-types';
 
@@ -33,12 +32,12 @@ export default class LoginScreen extends React.Component {
 
     return (
       <View style={{ flex: 2, alignItems: 'center', justifyContent: 'center' }}>
-        <Input
+        <TextInput
           placeholder="Email"
           onChangeText={email => this.setState({ email })}
           returnKeyType={'next'}
         />
-        <Input
+        <TextInput
           placeholder="Password"
           onChangeText={password => this.setState({ password })}
           secureTextEntry={true}

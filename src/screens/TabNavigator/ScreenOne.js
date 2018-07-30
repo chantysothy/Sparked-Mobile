@@ -1,12 +1,7 @@
+/* eslint no-use-before-define: 0 */
 import React from 'react';
-import { View, Text } from 'react-native';
 import Units from '../../containers/Units';
 
-const ScreenOne = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>All Units</Text>
-    <Units />
-  </View>
-);
+const ScreenOne = () => <Units />;
 
 export default ScreenOne;

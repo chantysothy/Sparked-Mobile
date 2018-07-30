@@ -1,6 +1,6 @@
 import Meteor, { withTracker } from 'react-native-meteor';
 import React from 'react';
-import { View, Text, FlatList, ActivityIndicator } from 'react-native';
+import { View, Text, FlatList, ActivityIndicator, StyleSheet } from 'react-native';
 import { withNavigation } from 'react-navigation';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -17,7 +17,6 @@ class Resources extends React.Component {
     const baseUrl = 'http://13.232.61.192/cdn/storage/';
     const resourceUrl = `${baseUrl}Resources/${id}/original/${id}.${type}`;
     this.props.onResourceClick(id, name, type, resourceUrl);
-    console.log(type);
     switch (type) {
       case 'png':
         return this.props.navigation.navigate('ImagesScreen');
@@ -38,15 +37,19 @@ class Resources extends React.Component {
   }
 
   renderUnit = ({ item }) => (
-    <Text onPress={() => this.setResourceStates(item._id, item.name, item.ext)}>{item.name}</Text>
+    <Text
+      style={Styles.center}
+      onPress={() => this.setResourceStates(item._id, item.name, item.ext)}>
+      {item.name}
+    </Text>
   )
   render() {
     const { resourcesReady, resources } = this.props;
     const { unitName } = store.getState();
 
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Resources</Text>
+      <View style={Styles.centersContainer}>
+        <Text style={Styles.titleText}>Resources</Text>
         {!resourcesReady ? (
           <ActivityIndicator size="large" color="#0000ff" />
         ) : !resources.length ? (
@@ -86,3 +89,34 @@ export default withTracker(() => {
     resources: Meteor.collection('Resources').find({ 'meta.unitId': checkedId }),
   };
 })(allResources);
+
+const Styles = new StyleSheet.create({
+  centersContainer: {
+    flex: 1,
+    justifyContent: 'flex-start',
+  },
+
+  center: {
+    color: '#fff',
+    backgroundColor: 'rgba(0,102,169,0.8)',
+    marginBottom: 1,
+    padding: 20,
+  },
+
+  titleBar: {
+    marginTop: 24,
+    paddingTop: 15,
+    paddingBottom: 15,
+    paddingLeft: 10,
+    paddingRight: 10,
+    backgroundColor: '#fff',
+    justifyContent: 'flex-start',
+  },
+
+  titleText: {
+    fontSize: 18,
+    fontWeight: '500',
+    textAlign: 'left',
+    color: 'rgba(0,102,169,1)',
+  },
+});

@@ -1,6 +1,7 @@
+/* eslint no-use-before-define: 0 */
 import Meteor, { withTracker } from 'react-native-meteor';
 import React from 'react';
-import { View, Text, FlatList, ActivityIndicator } from 'react-native';
+import { View, Text, FlatList, ActivityIndicator, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import { withNavigation } from 'react-navigation';
 import PropTypes from 'prop-types';
@@ -24,7 +25,10 @@ class Units extends React.Component {
   render() {
     const { unitReady, units } = this.props;
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <View style={Styles.centersContainer}>
+        <View style={Styles.titleBar}>
+          <Text style={Styles.titleText}>All Units</Text>
+        </View>
         {!unitReady ? (
           <ActivityIndicator size="large" color="#0000ff" />
         ) : (
@@ -59,3 +63,34 @@ export default withTracker(() => {
     units: Meteor.collection('unit').find(),
   };
 })(allUnits);
+
+const Styles = new StyleSheet.create({
+  centersContainer: {
+    flex: 1,
+    justifyContent: 'flex-start',
+  },
+
+  center: {
+    color: '#000',
+    backgroundColor: 'rgba(0,102,169,0.8)',
+    marginBottom: 1,
+    padding: 20,
+  },
+
+  titleBar: {
+    marginTop: 24,
+    paddingTop: 15,
+    paddingBottom: 15,
+    paddingLeft: 10,
+    paddingRight: 10,
+    backgroundColor: '#fff',
+    justifyContent: 'flex-start',
+  },
+
+  titleText: {
+    fontSize: 18,
+    fontWeight: '500',
+    textAlign: 'left',
+    color: 'rgba(0,102,169,1)',
+  },
+});
