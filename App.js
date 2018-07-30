@@ -11,8 +11,8 @@ import RegisterScreen from './src/screens/SignUpScreen';
 import ViewResourceScreen from './src/screens/ViewResourceScreen';
 import ImagesScreen from './src/screens/ImagesScreen';
 import VideoScreen from './src/screens/VideoScreen';
-import ScreenTwo from './src/screens/TabNavigator/ScreenTwo';
-import ScreenOne from './src/screens/TabNavigator/ScreenOne';
+import ScreenTwo from './src/screens/ScreenTwo';
+import ScreenOne from './src/screens/ScreenOne';
 import './src/helpers/connectMeteor';
 import rootReducer from './src/reducers/combinedReducers';
 
@@ -38,6 +38,7 @@ const App = () => (
 );
 
 export default App;
+
 const AppStackNavigator = new createStackNavigator(
   {
     WelcomeScreen: {
