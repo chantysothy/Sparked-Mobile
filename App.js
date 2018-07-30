@@ -8,11 +8,11 @@ import storage from 'redux-persist/lib/storage';
 import WelcomeScreen from './src/screens/WelcomeScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/SignUpScreen';
-import AppDrawerNavigator from './src/screens/DrawerNavigator';
 import ViewResourceScreen from './src/screens/ViewResourceScreen';
 import ImagesScreen from './src/screens/ImagesScreen';
 import VideoScreen from './src/screens/VideoScreen';
 import ScreenTwo from './src/screens/TabNavigator/ScreenTwo';
+import ScreenOne from './src/screens/TabNavigator/ScreenOne';
 import './src/helpers/connectMeteor';
 import rootReducer from './src/reducers/combinedReducers';
 
@@ -49,9 +49,6 @@ const AppStackNavigator = new createStackNavigator(
     RegisterScreen: {
       screen: RegisterScreen,
     },
-    DrawerNavigator: {
-      screen: AppDrawerNavigator,
-    },
     ViewResourceScreen: {
       screen: ViewResourceScreen,
     },
@@ -65,6 +62,12 @@ const AppStackNavigator = new createStackNavigator(
       screen: ScreenTwo,
       navigationOptions: {
         tabBarLabel: 'Resources',
+      },
+    },
+    ScreenOne: {
+      screen: ScreenOne,
+      navigationOptions: {
+        tabBarLabel: 'Units',
       },
     },
   },
