@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="handle" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="resources" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08a09e34-43a3-4584-b907-db1ead362306" name="Default" comment="" />
+    <list default="true" id="08a09e34-43a3-4584-b907-db1ead362306" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../src/containers/Resources.js" afterPath="$PROJECT_DIR$/../src/containers/Resources.js" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/VideoScreen.js" afterPath="$PROJECT_DIR$/../src/screens/VideoScreen.js" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

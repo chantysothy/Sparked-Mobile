@@ -1,6 +1,7 @@
 /* eslint no-return-assign: 0 */
 import React, { Component } from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet, FlatList } from 'react-native';
+import PropTypes from 'prop-types';
 import VideoPlayer from 'react-native-video-player';
 import { store } from '../../App';
 
@@ -13,12 +14,17 @@ export default class VideoScreen extends Component {
     alignItems: 'flex-start',
   }
 
+  static propTypes = {
+    navigation: PropTypes.object,
+  }
+
   render() {
     const {
       resourceReducer: { resourceLink, resourceName },
     } = store.getState();
     const { flexDirection, alignItems, justifyContent } = this.state;
     const layoutStyle = { flexDirection, justifyContent, alignItems };
+    const videos = this.props.navigation.getParam('resources', 'list');
     return (
       <View style={styles.container}>
         <Text style={{ fontSize: 22, marginTop: 22 }}>{resourceName.replace(/\.[^/.]+$/, '')}</Text>
@@ -36,6 +42,18 @@ export default class VideoScreen extends Component {
           <Button style={styles.box} onPress={() => this.player.pause()} title="Pause" />
           <Button style={styles.box} onPress={() => this.player.resume()} title="Resume" />
         </View>
+
+        {
+          <FlatList
+            data={videos}
+            keyExtractor={(x, i) => i.toString()}
+            renderItem={({ item }) => (
+              <View style={styles.box}>
+                <Text style={{ color: '#fff' }}>{item.name}</Text>
+              </View>
+            )}
+          />
+        }
       </View>
     );
   }

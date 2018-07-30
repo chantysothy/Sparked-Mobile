@@ -26,7 +26,7 @@ class Resources extends React.Component {
       case 'pdf':
         return this.props.navigation.navigate('ViewResourceScreen');
       case 'mp4':
-        return this.props.navigation.navigate('VideoScreen');
+        return this.props.navigation.navigate('VideoScreen', { resources: this.props.videos });
       default:
         break;
     }
@@ -36,6 +36,7 @@ class Resources extends React.Component {
     navigation: PropTypes.object,
     resourcesReady: PropTypes.bool.isRequired,
     resources: PropTypes.array.isRequired,
+    videos: PropTypes.array,
   }
 
   renderUnit = ({ item }) => (
@@ -90,6 +91,7 @@ export default withTracker(() => {
     resourcesReady: handle.ready(),
     handle,
     resources: Meteor.collection('Resources').find({ 'meta.unitId': checkedId }),
+    videos: Meteor.collection('Resources').find({ 'meta.unitId': checkedId, isVideo: true }),
   };
 })(allResources);
 
