@@ -1,7 +1,6 @@
 /* eslint no-use-before-define: 'off', no-console: 'off' */
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
-import Meteor from 'react-native-meteor';
 import PropTypes from 'prop-types';
 
 export default class WelcomeScreen extends React.Component {
@@ -14,11 +13,7 @@ export default class WelcomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={{ justifyContent: 'center' }}> SparkEd Mobile</Text>
-        {!Meteor.userId() ? (
-          <Button title="Connect" onPress={() => this.props.navigation.navigate('LoginScreen')} />
-        ) : (
-          <Button title="Connect" onPress={() => this.props.navigation.navigate('ScreenOne')} />
-        )}
+        <Button title="Connect" onPress={() => this.props.navigation.navigate('ScreenOne')} />
       </View>
     );
   }

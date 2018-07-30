@@ -12,6 +12,7 @@ import AppDrawerNavigator from './src/screens/DrawerNavigator';
 import ViewResourceScreen from './src/screens/ViewResourceScreen';
 import ImagesScreen from './src/screens/ImagesScreen';
 import VideoScreen from './src/screens/VideoScreen';
+import ScreenTwo from './src/screens/TabNavigator/ScreenTwo';
 import './src/helpers/connectMeteor';
 import rootReducer from './src/reducers/combinedReducers';
 
@@ -59,6 +60,12 @@ const AppStackNavigator = new createStackNavigator(
     },
     VideoScreen: {
       screen: VideoScreen,
+    },
+    ScreenTwo: {
+      screen: ScreenTwo,
+      navigationOptions: {
+        tabBarLabel: 'Resources',
+      },
     },
   },
   {
