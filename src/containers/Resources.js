@@ -7,6 +7,8 @@ import { connect } from 'react-redux';
 import { store } from '../../App';
 import mapDispatchToProps from '../actions/resourceActions';
 
+export const baseUrl = 'http://13.232.61.192/cdn/storage/';
+
 // ignore the isMounted() warning;
 YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated']);
 
@@ -17,7 +19,6 @@ class Resources extends React.Component {
   }
   setResourceStates = (id, name, type) => {
     // const baseUrl = 'http://10.1.0.149:3000/cdn/storage/';
-    const baseUrl = 'http://13.232.61.192/cdn/storage/';
     const resourceUrl = `${baseUrl}Resources/${id}/original/${id}.${type}`;
     this.props.onResourceClick(id, name, type, resourceUrl);
     switch (type) {

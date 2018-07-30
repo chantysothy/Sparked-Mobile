@@ -3,11 +3,14 @@ import React, { Component } from 'react';
 import { View, Text, Button, StyleSheet, FlatList } from 'react-native';
 import PropTypes from 'prop-types';
 import VideoPlayer from 'react-native-video-player';
+import { connect } from 'react-redux';
 import { store } from '../../App';
+import { baseUrl } from '../containers/Resources';
+import mapDispatchToProps from '../actions/resourceActions';
 
 const thumbnailUrl = 'http://13.232.61.192/uploads/logos/hMzpjRnRgkyjfEwFs.png'; // temporary video thumbnail as the logo
 
-export default class VideoScreen extends Component {
+class _videoScreen extends Component {
   state = {
     flexDirection: 'row',
     justifyContent: 'center',
@@ -16,8 +19,15 @@ export default class VideoScreen extends Component {
 
   static propTypes = {
     navigation: PropTypes.object,
+    onResourceClick: PropTypes.func,
   }
 
+  updatePlayer = (id, name, type) => {
+    const resourceUrl = `${baseUrl}Resources/${id}/original/${id}.${type}`;
+    this.props.onResourceClick(id, name, type, resourceUrl);
+    // force the component to re-render after the store changes
+    this.forceUpdate();
+  }
   render() {
     const {
       resourceReducer: { resourceLink, resourceName },
@@ -49,7 +59,11 @@ export default class VideoScreen extends Component {
             keyExtractor={(x, i) => i.toString()}
             renderItem={({ item }) => (
               <View style={styles.box}>
-                <Text style={{ color: '#fff' }}>{item.name}</Text>
+                <Text
+                  onPress={() => this.updatePlayer(item._id, item.name, item.ext)}
+                  style={{ color: '#fff' }}>
+                  {item.name}
+                </Text>
               </View>
             )}
           />
@@ -58,6 +72,18 @@ export default class VideoScreen extends Component {
     );
   }
 }
+const mapStateToProps = state => ({
+  resourceId: state.resourceId,
+  resourceName: state.resourceName,
+  resourceLink: state.resourceLink,
+});
+
+const VideoScreen = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(_videoScreen);
+
+export default VideoScreen;
 
 const styles = new StyleSheet.create({
   container: {
