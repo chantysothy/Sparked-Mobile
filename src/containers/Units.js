@@ -20,7 +20,9 @@ class Units extends React.Component {
     units: PropTypes.array.isRequired,
   }
   renderUnit = ({ item }) => (
-    <Text onPress={() => this.getUnitId(item._id, item.name)}>{item.name}</Text>
+    <Text style={Styles.center} onPress={() => this.getUnitId(item._id, item.name)}>
+      {item.name}
+    </Text>
   )
   render() {
     const { unitReady, units } = this.props;
@@ -42,10 +44,7 @@ class Units extends React.Component {
     );
   }
 }
-// const mapStateToProps = state => ({
-//   unitId: state.unitId,
-//   unitName: state.unitName,
-// });
+
 const mapStateToProps = state => ({
   unitId: state.unitId,
   unitName: state.unitName,
@@ -71,7 +70,7 @@ const Styles = new StyleSheet.create({
   },
 
   center: {
-    color: '#000',
+    color: '#fff',
     backgroundColor: 'rgba(0,102,169,0.8)',
     marginBottom: 1,
     padding: 20,
